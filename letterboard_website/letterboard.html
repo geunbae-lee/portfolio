@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Letterboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+<!-- Favicon-->
+<link rel="shortcut icon" href="img/favicon.png" >
+
+<!-- Fonts-->
+<link rel="stylesheet" href="css/fonts.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Fontawesome -->
+<script src="https://use.fontawesome.com/d9b856715b.js"></script>
+    
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+    
+</head>
+    
+<body>
+<div id="container">
+    <div id="top">
+        <div id="logo"></div>
+        <div id="header">
+            <h2>Letterboard Real-time Data Viewer</h2>
+        </div>
+    </div>
+    
+    <div id="main">
+        <div id="nav">
+            <ul>
+                <li class="nav-title">MAIN</li>
+                <li class="nav-subtitle active">Real-time</li>
+                <li class="nav-title">ACCOUNT</li>
+                <li class="nav-subtitle">Account</li>
+                <li class="nav-subtitle">Logout</li>
+            </ul>
+        </div>
+        <div id="content">
+
+            <div id="list">
+                <h4 class="subtitle float-left">Please add words to your list:</h4>
+                <input type="text" id="input">
+                <input type="submit" value="Submit" id="button" onclick="addItem()"></button>
+                <hr/>
+                <h5>Select a word to begin testing</h5>
+                <div id="list-container">
+                    <ul id="word-list">
+                    </ul>
+                </div>
+            </div>
+            <div id="stats">
+                <div class="stats margin-right">
+                    <h4 class="subtitle">Real-time Accuracy</h4>
+                    <p class="data"><img src="img/increase.png">64%</p>
+                    <p class="extra-data">Increase 16%</p>
+                </div>
+                <div class="stats">
+                    <h4 class="subtitle">Average Word Accuracy</h4>
+                    <p class="data"><img src="img/decrease.png">45%</p>
+                    <p class="extra-data">Decrease 4%</p>
+                </div>
+                <div class="stats margin-right margin-top">
+                    <h4 class="subtitle">Intentionality</h4>
+                    <p class="data"><img src="img/increase.png">66%</p>
+                    <p class="extra-data">Increase 14%</p>
+                </div>
+                <div class="stats margin-top">
+                    <h4 class="subtitle">Best Word</h4>
+                    <p class="data accuracy">Accuracy</p>
+                    <p class="extra-data">88% Accuracy<p>
+                </div>
+            </div>
+            <div id="tracking">
+                <h4 class="subtitle float-left">Real-time Data Visualization</h4>
+                <p id="current">Current Word: <span id="current-word"></span></p>
+                <p id="next">Next Word: <span id="next-word"></span></p>
+                
+                <p id="larger-current-word">&nbsp;</p>
+                
+                <div id="real-time">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                
+                <div id="letterboard">
+                    <table>
+                        <tr>
+                            <td id="a">A</td>
+                            <td id="b">B</td>
+                            <td id="c">C</td>
+                            <td id="d">D</td>
+                            <td id="e">E</td>
+                        </tr>
+                        <tr>
+                            <td id="f">F</td>
+                            <td id="g">G</td>
+                            <td id="h">H</td>
+                            <td id="i">I</td>
+                            <td id="j">J</td>
+                        </tr>
+                        <tr>
+                            <td id="k">K</td>
+                            <td id="l">L</td>
+                            <td id="m">M</td>
+                            <td id="n">N</td>
+                            <td id="o">O</td>
+                        </tr>
+                        <tr>
+                            <td id="p">P</td>
+                            <td id="q">Q</td>
+                            <td id="r">R</td>
+                            <td id="s">S</td>
+                            <td id="t">T</td>
+                        </tr>
+                        <tr>
+                            <td id="u">U</td>
+                            <td id="v">V</td>
+                            <td id="w">W</td>
+                            <td id="x">X</td>
+                            <td id="y">Y</td>
+                            <td id="z">Z</td>
+                        </tr>
+                    </table>
+                </div>
+<!--                <p id="match-status">Word Match / No Match: <span id="match">N/A</span></p>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="js/data.js"></script>
+</body>
+
+</html>

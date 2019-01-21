@@ -1,0 +1,368 @@
+.nav-highlight{
+    color:#fff !important;
+}
+
+.main-navigation {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow:0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.main-navigation li {
+  display: block;
+  float: left;
+  padding-left: 20px;
+text-align: center;  
+}
+
+.main-navigation li a {
+  letter-spacing: 0.05em;
+  font-family: "Montserrat",sans-serif;
+  padding: 11px 13px;
+  display: block;
+  color: #A8A8A8;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+
+.main-navigation ul i{
+    float: right;
+    font-size:22px;
+    padding:12px;
+    margin-right: 10px;
+}
+
+.main-navigation ul i:hover {
+   color: #fff;
+}
+
+.main-navigation li a i {
+    display:none;
+}
+
+.main-navigation li a:hover {
+   color: #fff;
+}
+
+.page-info {
+  position:relative;
+  z-index:1;
+  clear:both;
+  visibility:hidden;
+  opacity:0;
+  cursor:auto;
+  background-color:#fff;
+  color:#3f538e;
+}
+
+.is-full-width .page-info {
+  visibility:visible;
+  opacity:1
+}
+
+.page-info, .container-fluid{
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+
+/* -------------------------------*/
+/* Resume Styles*/
+/* -------------------------------*/
+
+.resume {
+  background: none repeat scroll 0 0 #fff;
+  padding: 0;
+  position: relative;
+  margin: 45px auto 0;
+}
+
+
+.resume .education_experience {
+  padding-top: 40px;
+  padding-left: 70px;
+  color: #50626C;
+}
+
+
+.resume .education_experience h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #151515;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+}
+
+.resume .education_experience h2.experience{
+    padding-top: 30px;
+}
+
+.resume .education_experience img, .resume .recognition_skillsets img{
+    float: left;
+    margin-right: 20px;
+}
+
+.resume .education_experience h3{
+    font-family: "Ubuntu",sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #3C3C3C;
+    letter-spacing: 1.1px;
+}
+
+.resume .education_experience p{
+    font-family: "Hind",sans-serif;
+    font-size: 13px;
+    color: #757575;
+    letter-spacing: 0.8px;
+}
+
+.resume .education_experience p i{
+    padding-right: 5px;
+    color: #759EB1;
+}
+
+.resume .education_experience p i.fa-calendar{
+    padding-left: 10px;
+}
+
+.resume .education_experience p.Linkedin-note{
+   font-family: "Hind",sans-serif;
+    color: #757575;
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    font-size: 13px;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 80px;
+}
+
+.resume .education_experience p.Linkedin-note a{
+    font-weight: bold;
+    color: #0077B5;
+}
+
+.resume .recognition_skillsets {
+    display:block;
+    min-height:930px;
+    position:relative;
+    z-index:2;
+}
+
+.resume .recognition-inner {
+    background: none repeat scroll 0 0 #f2f2f2;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    padding-top: 40px;
+}
+
+.resume .recognition-inner h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #151515;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+    padding-left: 60px;
+}
+
+.resume .recognition-inner .recognition-block{
+    padding-left: 60px;
+}
+
+.resume .recognition-inner .recognition-block h3{
+    font-family: "Ubuntu",sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #3C3C3C;
+    letter-spacing: 1.1px;
+}
+
+.resume .recognition-inner .recognition-block p{
+    font-family: "Hind",sans-serif;
+    font-size: 13px;
+    color: #757575;
+    letter-spacing: 0.8px;
+}
+
+.resume .recognition-inner .recognition-block p i{
+    padding-right: 5px;
+    color: #759EB1;
+}
+
+.resume .recognition-inner .recognition-block p i.fa-calendar{
+    padding-left: 10px;
+}
+
+.resume .recognition-inner h2.skillsets{
+    padding-top:30px;
+}
+
+.resume .skillsets-block{
+    padding-left: 60px;
+}
+
+.resume .skillsets-block h3{
+    font-family: "Ubuntu",sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #3C3C3C;
+    letter-spacing: 1.1px;
+}
+
+.resume .skillsets-block p{
+    font-family: "Hind",sans-serif;
+    font-size: 13px;
+    color: #757575;
+    letter-spacing: 0.8px;
+}
+
+
+/* ---------------------------- */
+/*Footer Styles*/
+/*--------------------------------*/
+
+.footer {
+  background:none repeat scroll 0 0 #ebebeb;
+  display:block;
+  min-height:60px;
+  padding:20px 50px;
+}
+
+.footer a {
+  color:#3f3f46;
+  font-size:13px;
+  font-weight:700;
+  padding-right:40px;
+  position:relative;
+  text-decoration:none;
+  text-transform: uppercase
+}
+
+.footer a:after {
+  background:none repeat scroll 0 0 #3f3f46;
+  content:"";
+  height:10px;
+  margin:-5px 0 0;
+  position:absolute;
+  right:0;
+  top:50%;
+  width:1px
+}
+
+.footer span {
+  color:#b1b1b1;
+  font-size:12px;
+  font-weight:400;
+  margin-left:40px
+}
+
+
+@media screen and (max-width: 768px)  {
+    div.main-navigation{
+        height:40px;
+    }
+    ul.navigation{
+        padding-left: 0
+    }
+    ul.navigation li{
+        width: 20%;
+        padding: 0
+    }
+    ul.navigation a{
+        font-size: 13px;
+    }
+    ul.navigation i{
+        display: none;
+    }
+    div.education_experience{
+        padding-top: 20px !important;
+        padding-left: 40px !important;
+    }
+    div.education_experience h2{
+        font-size: 30px !important;
+        line-height: 15px !important;
+        padding-bottom: 10px;
+    }
+    
+    div.education_experience h3{
+        font-size: 12px !important;
+        line-height: 15px !important;
+        letter-spacing: 0.45px !important;
+    }
+    
+    div.education_experience p{
+        font-size: 10px !important;
+        letter-spacing: 0.05px !important;
+    }
+    
+    .resume .education_experience p i{
+        padding-right: 4px !important;
+        color: #759EB1;
+    }  
+    
+    .resume .education_experience p i.fa-calendar{
+        padding-left: 8px !important;
+    }
+    
+    div.education_experience p.Linkedin-note{
+        font-size: 10px !important;
+        padding-right: 20px !important;
+        padding-bottom: 5px;
+        padding-top: 15px !important;
+    }
+
+    div.recognition_skillsets .recognition-inner{
+        padding-left: 0px !important;
+        padding-right: 40px !important;
+        font-size: 15px !important;
+        line-height: 20px !important;
+        padding-top: 20px
+    }
+    
+    div.recognition_skillsets .recognition-inner .recognition-block{
+        padding-left: 40px !important;
+    }
+    
+   div.recognition_skillsets .recognition-inner h2{
+        padding-left: 40px !important;
+        padding-bottom: 10px;
+        font-size: 30px !important;
+        line-height: 15px !important;
+    }
+    
+    div.recognition_skillsets .recognition-inner .recognition-block h3{
+        font-size: 12px !important;
+        line-height: 15px !important;
+        letter-spacing: 0.45px !important;
+    }
+    
+    div.recognition_skillsets .recognition-inner .recognition-block p{
+        font-size: 10px !important;
+        letter-spacing: 0.2px !important;
+    }
+    
+    .resume .skillsets-block{
+        padding-left: 40px
+    }
+
+    
+    .resume .skillsets-block h3{
+        font-size: 13px;
+    }
+    
+    .resume .skillsets-block p{
+        font-size: 11px
+    }
+    
+    .footer a{
+        padding-left: 40px;
+    }
+}
+

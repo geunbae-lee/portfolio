@@ -1,0 +1,376 @@
+.nav-highlight{
+    color:#fff !important;
+}
+
+.main-navigation {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow:0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.main-navigation li {
+  display: block;
+  float: left;
+  padding-left: 20px;
+text-align: center;  
+}
+
+.main-navigation li a {
+  letter-spacing: 0.05em;
+  font-family: "Montserrat",sans-serif;
+  padding: 11px 13px;
+  display: block;
+  color: #A8A8A8;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.main-navigation ul i{
+    float: right;
+    font-size:22px;
+    padding:12px;
+    margin-right: 10px;
+}
+
+.main-navigation ul i:hover {
+   color: #fff;
+}
+
+.main-navigation li a i {
+    display:none;
+}
+
+.main-navigation li a:hover {
+   color: #fff;
+}
+
+
+.page-info {
+  position:relative;
+  z-index:1;
+  clear:both;
+  visibility:hidden;
+  opacity:0;
+  cursor:auto;
+  background-color:#fff;
+  color:#3f538e;
+}
+
+.is-full-width .page-info {
+  visibility:visible;
+  opacity:1
+}
+
+.page-info, .container-fluid{
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+
+/* -------------------------------*/
+/* Profile Styles*/
+/* -------------------------------*/
+
+.about-me {
+  background: none repeat scroll 0 0 #fff;
+  padding: 0;
+  position: relative;
+  margin: 45px auto 0;
+}
+
+.about-me .profile {
+  padding-top: 60px;
+  padding-left: 70px;
+  color: #50626C;
+}
+
+.about-me .profile h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #151515;
+    letter-spacing: 2.76px;
+    line-height: 40px;
+}
+
+.about-me .profile h3{
+    font-family: "Hind", sans-serif;
+    font-size: 25px;
+    color: #151515;
+    letter-spacing: 2.18px;
+    padding-top: 5px;
+}
+
+
+.about-me .profile p.currently{
+    padding-top: 30px;
+    font-family: "Hind-Regular",sans-serif;
+    font-size: 15px;
+    color: #151515;
+    letter-spacing: 0.81px;
+    line-height: 30px;
+}
+
+.about-me .profile p.currently span.facebook{
+    font-weight: bold;
+    color: #3B5998;
+}
+
+.about-me .profile p.currently span.georgiatech{
+    font-weight: bold;
+    color: #EEB211;
+}
+
+.about-me .profile p.currently span.michigan{
+    font-weight: bold;
+    color: #00274C;
+}
+
+.about-me .profile h2.rec-title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #151515;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-me .profile img{
+    border-radius: 50%;
+    width: 65px;
+    margin-right: 20px;
+    float: left;
+}
+
+.about-me .profile h4.rec-name{
+    font-family: "Ubuntu",sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #3C3C3C;
+    letter-spacing: 1.1px;
+}
+
+.about-me .profile h5.rec-position{
+    font-family: "Hind",sans-serif;
+    font-size: 15px;
+    color: #555;
+    letter-spacing: 0.8px;
+}
+
+.about-me .profile h6.rec-nature{
+    font-family: "Hind",sans-serif;
+    font-size: 13px;
+    color: #888;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+}
+
+.about-me .profile p.rec-description{
+    font-family: "Hind",sans-serif;
+    font-size: 13px;
+    color: #757575;
+    letter-spacing: 0.8px;
+    padding: 0 50px 0 0;
+}
+
+/*
+.about-me .profile img{
+    padding-top: 50px;
+    width: 680px;
+}
+*/
+
+.about-me .bio {
+  display:block;
+  min-height:1150px;
+  position:relative;
+  z-index:2;
+}
+
+.about-me .bio-inner {
+  background: none repeat scroll 0 0 #f2f2f2;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  padding-top: 60px;
+}
+
+.about-me .bio-inner h4.first{
+    padding-top: 0 !important;
+}
+
+.about-me .bio-inner h4.bio-title{
+    padding-left: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #151515;
+    letter-spacing: 1.03px;
+    padding-top: 70px;
+}
+
+.about-me .bio-inner p.bio-content{
+    padding: 5px 50px;
+    font-family: "Hind",sans-serif;
+    font-size: 15px;
+    color: #757575;
+    letter-spacing: 1.03px;
+    line-height: 23px;
+}
+
+.about-me .bio-inner p.note{
+    font-family: "Hind",sans-serif;
+    letter-spacing: 1.03px;
+    line-height: 23px;
+    color:#757575;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 50px;
+    font-style: italic;
+}
+
+.about-me .bio-inner p.note a.dribbble{
+    color: #EA4C89;
+    font-weight: bold;
+}
+
+.about-me .bio-inner p.note a.medium{
+    color: #5d8727;
+    font-weight: bold;
+}
+
+
+/* ---------------------------- */
+/*Footer Styles*/
+/*--------------------------------*/
+
+.footer {
+  background:none repeat scroll 0 0 #ebebeb;
+  display:block;
+  min-height:60px;
+  padding:20px 50px;
+}
+
+.footer a {
+  color:#3f3f46;
+  font-size:13px;
+  font-weight:700;
+  padding-right:40px;
+  position:relative;
+  text-decoration:none;
+  text-transform: uppercase
+}
+
+.footer a:after {
+  background:none repeat scroll 0 0 #3f3f46;
+  content:"";
+  height:10px;
+  margin:-5px 0 0;
+  position:absolute;
+  right:0;
+  top:50%;
+  width:1px
+}
+
+.footer span {
+  color:#b1b1b1;
+  font-size:12px;
+  font-weight:400;
+  margin-left:40px
+}
+
+
+@media screen and (max-width: 768px)  {
+    div.main-navigation{
+        height:40px;
+    }
+    ul.navigation{
+        padding-left: 0
+    }
+    ul.navigation li{
+        width: 20%;
+        padding: 0
+    }
+    ul.navigation a{
+        font-size: 13px;
+    }
+    ul.navigation i{
+        display: none;
+    }
+    div.profile{
+        padding-top: 20px !important;
+        padding-left: 40px !important;
+    }
+    div.profile h2{
+        font-size: 30px !important;
+        line-height: 15px !important;
+    }
+    div.profile h3{
+        font-size:15px !important;
+    }
+    
+    div.profile p{
+        padding-top: 20px !important;
+        font-size: 11px !important;
+    }
+    
+    .about-me .profile img{
+        width: 55px;
+    }
+    
+    .about-me .profile h2.rec-title{
+        font-size: 22px !important;
+        line-height: 15px !important;
+        padding-bottom: 30px;
+    }
+
+    .about-me .profile h4.rec-name{
+        font-size: 15px;
+    }
+    
+    .about-me .profile h5.rec-position{
+        font-size: 13px;
+        margin-top: -2px;
+    }
+    
+    .about-me .profile h6.rec-nature{
+        font-size: 11px;
+        margin-top: -4px;
+    }
+    
+    .about-me .profile p.rec-description{
+        padding-top: 10px !important;
+        padding-right: 20px !important;
+        padding-bottom: 20px;
+    }
+    
+    .bio-inner {
+       background: none repeat scroll 0 0 #f2f2f2 !important;
+    }
+    .bio-inner h4.bio-title{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        font-size: 15px !important;
+        line-height: 20px !important;
+    }
+    .bio-inner p.bio-content{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        font-size: 15px !important;
+        line-height: 20px !important;
+    }
+    .bio-inner p.note{
+        padding-right: 40px !important;
+        font-size: 12px !important;
+    }
+    .footer a{
+        padding-left: 40px;
+    }
+    
+}
+
